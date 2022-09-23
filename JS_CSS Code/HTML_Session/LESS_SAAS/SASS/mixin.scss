@@ -1,0 +1,14 @@
+@mixin style1 {
+    
+    background-color: green;
+    width: 200px;
+    height: 100px;
+}
+@mixin  style2($radius) {
+    
+    border-radius: $radius;
+}
+.box{
+    @include style1();
+    @include style2(100px);
+}

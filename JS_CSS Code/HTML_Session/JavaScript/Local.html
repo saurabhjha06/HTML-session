@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <button onclick="setCounter()">Add To Cart</button>
+    <p id="p1"></p>
+    
+    <script>
+        //On click of button increment cart items by 1 and store it in localstorage
+        function setCounter(){
+           // alert("Inside setCOunter")
+            if(localStorage.getItem("cartItems1") == null){
+                    localStorage.setItem("cartItems1",1)
+            }
+            else{
+                    //First get existing value for key key cartItems from localstorage
+                    // convert this value to int and increment by 1
+                   var value = parseInt( localStorage.getItem("cartItems1") ) +1
+                    //set new value to key cartItems
+                    localStorage.setItem("cartItems1",value)
+                    //show current cartItems1 from localStorage as inner Text of p1
+                  
+            }
+            document.getElementById("p1").innerText = localStorage.getItem("cartItems1") 
+        }
+            </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+/*Element Selector: It will all elements of a given type*/
+        /* p{
+            background-color: goldenrod;
+            height: 100px;
+            width: 100px;
+        } */
+
+/*ID Selector : It will select an speciifc element of a given id*/
+        /* #p1{
+            background-color: aqua;
+            height: 100px;
+            width: 100px;
+        } */
+
+        /* .class1{
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+        } */
+
+
+        /*Multi element selector*/
+        div,p{
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+        }

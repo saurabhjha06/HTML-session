@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="BigLoop()">Big Loop</button>
+    <button onclick="HelloWorld()">Hello World</button>
+
+    <script>
+
+        function BigLoop(){
+
+            //     var no =0
+            // for(var i=0;i<10000000000;i++){
+            //         no =i
+            // }
+
+            //Execute Time consuming code on seperate Thread using web worker
+
+            worker = new Worker('worker.js') // code written in wroker.js will be executed in seperate thread
+
+            //And main thread will not be blocked
+
+            worker.onmessage = function(evt){ //this will be called when another thread calls postMessage()
+
+                alert(evt.data)
+            }
+            //alert(no)
+        }
+
+        function HelloWorld(){
+            alert("Hello World !!")
+        }
+    </script>
+</body>
+</html>

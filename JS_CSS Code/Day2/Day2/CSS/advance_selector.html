@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  
+<style>
+   /*Sibling selector: Select all <p> type of siblings which are placed after <div>*/
+    /* div ~ p{
+        background-color: palegreen;
+        height: 200px;
+    } */
+
+/*Select <p> type of sibling whoch is placed immediately after <div>
+    WIll select first <p> type of Sibling of <div>
+    
+    */
+    /* div + p{
+        background-color: palegreen;
+        height: 200px;
+    } */
+
+
+    /*CHild selector*/
+
+    /* ul li{
+        background-color: green;
+    } */
+
+    /* ul > li {
+        background-color: green;
+    } */
+
+
+    /*Pseudo class : A pseudo class is used to define special state of an element*/
+
+/*It will select first occurance of <p> type of child element for any parent*/
+    /* p:first-of-type{
+
+        background-color: yellow;
+    } */
+
+    /* p:last-of-type{
+
+background-color: yellow;
+} */
+
+
+/*If <p> type of element if first child of any parent then select it */
+    /* p:first-child{
+
+        background-color: yellow;
+    } */
+
+/* if a given parent has only one <p> type of child element it will be selected*/
+    /* p:only-of-type{
+
+        background-color: purple;
+    } */
+
+
+    /* a:link{color: red;}
+
+    a:hover{color: darkgray;}
+    a:visited{color: blue;}
+
+    a:active{color: yellow;} */
+
+
+    /*Pseduo elements :active
+    It is used to style specific part of html element
+    */
+
+
+    /* p::first-letter{
+        font-size: 30px;
+        color: red;
+    } */
+    /* p::first-line{
+        font-size: 30px;
+        color: red;
+    } */
+
+
+    /* h1::before{
+        content: url('./images/smiley.jpg');
+    }
+
+    h1::after{
+        content: url('./images/smiley.jpg');
+    } */
+    ::selection{
+
+        color:yellow;
+        background-color: green;
+    }
+
+</style>
+</head>
+
+<body>
+    <p>This is first para</p>
+    <h1>Hello, Smile Please!</h1>
+
+   
+   
+    <ul id="list1">
+        <li class='a'>item 1</li>
+        <li class='a'>item 2</li>
+        <li class='b'>item 3</li>
+        <li class='b'>item 4</li>
+        <li>item 5</li>
+    </ul>
+    <!-- <ul id="list2">
+        <li>item 1</li>
+    </ul> -->
+
+  
+    <div>
+        This is Div1
+        <br/>
+        <br/>
+        <br/>
+        <div>
+            I am nested Div!
+        </div>
+    </div>
+    <p class="a">
+        This is paragraph 1
+        <div>
+            This is Div 2 inside para 1
+        </div>
+    </p>
+    <p id='para1'>
+        This is pargraph 2!
+    </p>
+    <p class='b'>
+        This is pargraph 3!
+        <p>nested first para</p>
+        <p>nested second para</p>
+    </p>
+    <div>
+        This is Div 3
+    </div>
+    <p>This is HTML Training
+        <br/> THis is details about HTML training.
+    </p>
+    <p>Last para</p>
+    <div>Last Div</div>
+    <a href="https://www.microsoft.com">This is a link</a> <br/>
+    <a href="https://www.javatpoint.com">This is a link</a>
+   <div>
+        <p>This is only paragraph in div!</p>
+  
+         <div>++++</div>
+     
+    </div>
+     <!-- <div>
+        <p>This is first paragraph in div!</p>
+        <p>This is second paragraph in div!</p>
+    </div> -->
+    <br/><br/><br/><br/><br/><br/>
+</body>
+
+</html>
